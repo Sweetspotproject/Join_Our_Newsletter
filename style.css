@@ -1,0 +1,114 @@
+/* Estilos generales de la pagina */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html, body{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #F9FAFB;
+  margin: 0;
+}
+
+/* Estilos del logo */
+img{
+  width: 60px;
+  margin-top: 60px;
+}
+
+/* Estilos del titulo */
+h1{
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* Estilos de la pagina de descripcion */
+.description{
+  font-size: 20px;
+  font-weight: 400;
+  color: #6C727F;
+}
+
+/* Estilos para el formulario */
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  color: #6C727F;
+  max-width: 600px;
+  height: 240px;
+  margin: 50px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.09);
+}
+
+/* Estilos para los input del formulario */
+#email, #enviar{
+  width: 100%;
+  border: 1px solid #ddd;
+  height: 90px;
+  background-color: #F9FAFB;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#enviar{
+  border: none;
+  background-color: #3662E3;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Estilos para la nota final del formulario */
+.nota{
+  margin: 10px;
+  color: #6C727F;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Media Queries*/
+@media (max-width: 768px){
+  h1{
+    font-size: 36px;
+  }
+
+  .description{
+    font-size: 18px;
+  }
+
+  form{
+    padding: 30px;
+  }
+
+  #email, #enviar{
+    max-width: 90%;
+  }
+}
+
+/* Media Queries Very Small Screens*/
+@media (max-width:480px){
+  h1{
+    font-size: 28px;
+  }
+
+  .description{
+    font-size: 16px;
+  }
+
+  form{
+    padding: 20px;
+  }
+}
